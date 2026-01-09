@@ -103,10 +103,9 @@ run: build
 
     (project_path / "Justfile").write_text(just_content)
     
-    print(f"{project_name} create successfully");
+    print(f"{project_name} created successfully!");
     
 if __name__ == "__main__":
-    print(len(sys.argv))
     if len(sys.argv) == 3:
         if (sys.argv[1] == "c"):
             create_c_project(sys.argv[2])
